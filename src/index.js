@@ -51,7 +51,7 @@ const DEBOUNCE_DELAY = 300;
       const markupList = countries
           .map(
               el =>
-                  `<li class="country-list--item">
+                  `<li class="country-list-item">
               <img src="${el.flags.svg}" alt="Flag" width="50">
               <span class="country-list--span">${el.name}</span>
           </li>`
@@ -69,11 +69,11 @@ const DEBOUNCE_DELAY = 300;
       const markupCard = `<div class="country-card">
           <div class="country-card--box">
               <img src="${el.flags.svg}" alt="Flag" width="60", height="30">
-              <h2 class="country-card--title"> ${el.name}</h2>
+              <h2 class="country-card-title"> ${el.name}</h2>
           </div>
-              <p class="country-card--info"><b>Capital:</b> ${el.capital}</p>
-              <p class="country-card--info"><b>Population:</b> ${el.population}</p>
-              <p class="country-card--info"><b>Languages:</b> ${langs}</p>
+              <p class="country-card-info"><b>Capital:</b> ${el.capital}</p>
+              <p class="country-card-info"><b>Population:</b> ${el.population}</p>
+              <p class="country-card-info"><b>Languages:</b> ${langs}</p>
           </div>`;
       countryInfoEl.insertAdjacentHTML('afterbegin', markupCard);
   }
